@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url('images/background.webp');
+    text-align: center;
+    position: relative;
+}
+
+
+aside {
+    background-color: chartreuse;
+    height: 370px;
+    width: 450px;
+    position: absolute;
+    top: 150px;
+    left: 220px;
+
+}
+
+div {
+    background-color: antiquewhite;
+    height: 370px;
+    width: 450px;
+    position: absolute;
+    top: 150px;
+    left: 670px;
+}
+
+h1, p {
+    margin-top: 100px;
+}
+
+footer {
+    position: absolute;
+}
