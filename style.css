@@ -6,10 +6,12 @@
 }
 body {
     background-image: url('images/background.webp');
+}
+
+main {
     text-align: center;
     position: relative;
 }
-
 
 aside {
     background-color: chartreuse;
@@ -34,6 +36,3 @@ h1, p {
     margin-top: 100px;
 }
 
-footer {
-    position: absolute;
-}
