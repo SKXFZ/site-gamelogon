@@ -5,23 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videos Select</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-image: url('images/background.webp');
+            text-align: center;
+        }
+
+        div {
+            display: inline-block;
+            background-color: rgb(255, 255, 255);
+            height: 350px;
+            width: 390px;
+            border-width: 10px;
+            border-style: double;
+            border-color: darkblue;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        img {
+            height: 250px;
+            width: 390px;
+        
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>Selecione um video</h1>
-    <div>
-        <video src=""></video>
+    <h1>Selecione um jogo</h1>
+    <div id="v1">
+        <img src="images/Domina.jpg" alt="ilustracao-do-game-domina">
         <h2>Titulo</h2>
-        <p>Mais detalhes</p>
+        <a href="domina.html" target="_blank" rel="next">
+            <p>Mais detalhes</p>
+        </a>
     </div>
-    <div>
-        <video src=""></video>
+    <div id="v2">
+        <img src="images/moon-hunters-capa.jpg" alt="ilustracao-do-game-moon-hunters">
         <h2>Titulo</h2>
-        <p>Mais detalhes</p>
+        <a href="moon.html" target="_blank" rel="next">
+            <p>Mais detalhes</p>
+        </a>
     </div>
-    <div>
-        <video src=""></video>
+    <div id="v3">
+        <img src="images/Slain Back from Hell.jpg" alt="ilustracao-do-game-slain">
         <h2>Titulo</h2>
-        <p>Mais detalhes</p>
+        <a href="slain.html" target="_blank" rel="next">
+            <p>Mais detalhes</p>
+        </a>
     </div>
 </body>
 </html>
