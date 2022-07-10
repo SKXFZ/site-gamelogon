@@ -8,42 +8,97 @@
     <title>Videos Select</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
         * {
             margin: 0px;
             padding: 0px;
         }
 
         body {
-            background-image: url('images/background.webp');
+            background-image: url('images/background3.jpg');
+            background-size: 100%;
+            
         }
 
         main {
-            text-align: center;
             position: relative;
         }
 
         aside {
-            background-color: chartreuse;
+            background-image: url('images/aside-background1.webp');
+            background-size: 100% 100%;
             height: 370px;
             width: 450px;
             position: absolute;
             top: 150px;
             left: 220px;
+            color: beige;
 
         }
 
         div {
-            background-color: antiquewhite;
+            background-image: linear-gradient(to top, rgba(204, 205, 226, 0.89), rgba(181, 173, 206, 0.856));
             height: 370px;
             width: 450px;
             position: absolute;
             top: 150px;
             left: 670px;
+            color: bisque;
+            color: rgba(255, 255, 255, 0.877);
         }
 
-        h1,
-        p {
-            margin-top: 100px;
+        h1 {
+            padding-top: 20px;
+            padding-left: 15px;
+            font-style: italic;
+            font-size: 2.5em;
+            font-family: 'Fira Sans', sans-serif;
+            font-weight: lighter;
+        }
+        div > p {
+            font-size: 20px;
+            font-weight: lighter;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: 'Fira Sans', sans-serif;
+        }
+
+        #cadastro {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #link {
+            text-decoration: none;
+            color: black;
+        }
+
+        input {
+            margin-left: 20px;
+            margin-top: 5px;
+            padding: 5px 2px;
+        }
+        .icone {
+            margin-left: 90px;
+        }
+
+        #buton {
+            color: white;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-left: 170px;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: brown;
+            cursor: pointer;
+        }
+        #buton:hover {
+            background-color: rgb(128, 194, 29);
+        }
+        #buton:active {
+            background-color: rgba(0, 122, 47, 0.808);
         }
     </style>
 </head>
@@ -51,16 +106,16 @@
 <body>
     <aside>
         <h1>Site teste de videos 2D</h1>
-        <p>Conteudo personalizado e responsivo</p>
     </aside>
     <div>
         <h1>Seja bem-vindo ao site!</h1>
-        <p>Por favor insira seu Login abaixo.</p>
-        <input type="text" id="">
+        <p>Insira seu Login abaixo.</p>
+        <img src="images/usuario.png" alt="usuario" class="icone"><input type="text" id="usuario">
         <br>
-        <input type="number" id="">
+        <img src="images/cadeado.webp" alt="senha" class="icone"><input type="password" id="senha">
         <br>
-        <input type="button" value="Entrar">
+        <input type="button" value="Entrar" id="buton">
+        <p id="cadastro">Não possui cadastro? <a href="#" id="link">Registre-se aqui!</a></p>
     </div>
     <a href="videos-select.html" target="_self" rel="next">Proxima Pagina</a>
     <footer>
