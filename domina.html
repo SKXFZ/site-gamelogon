@@ -11,6 +11,7 @@
         }
 
         div {
+            background-color: rgba(224, 224, 224, 0.76);
             min-height: 350px;
             width: 490px;
             border: 10px double darkblue;
@@ -18,7 +19,7 @@
         }
         
         #detalhes {
-            color: white;
+            color: black;
             text-decoration: underline;
             cursor: pointer;
         }
@@ -38,8 +39,17 @@
         <aside id="detalhes">
             <h3>Detalhes do video</h3>
         </aside>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime commodi et ducimus! Quisquam asperiores omnis sequi iste corporis veniam suscipit qui, voluptates aperiam id eaque, tempore ab magni! Suscipit.</p>
     </div>
-    <script src="script.js"></script>
+    <script>
+        const clique = document.querySelector('#detalhes')
+        clique.innerHTML = ''
+        const texto = document.createElement('p')
+        texto.style.textDecoration = 'none';
+        texto.style.cursor = 'Default';
+        texto.innerHTML = msg;
+        texto.innerHTML = `<h3>Titulo: </h3> <p> Game Domina</p>`
+        texto.innerHTML += `<h3>Data: </h3> <p> 16/07/2020</p>`
+        clique.appendChild(texto)
+    </script>
 </body>
 </html>

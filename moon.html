@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domina</title>
+    <title>Moon Hunters</title>
     <style>
         body {
             background-image: url('images/background.png');
         }
 
         div {
-            height: 420px;
+            background-color: rgba(224, 224, 224, 0.76);
+            min-height: 350px;
             width: 490px;
             border: 10px double darkblue;
             margin: auto;
         }
-        section {
-            border-width: 25px 40px;
-            border-style: solid;
-            border-color: #19226B;
-            margin: auto;
+        
+        #detalhes {
+            color: black;
+            text-decoration: underline;
+            cursor: pointer;
         }
 
         iframe {
@@ -33,8 +34,10 @@
 <body>
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/01DF3gvfMZA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-        <h3>Detalhes do video</h3>
+        <aside id="detalhes">
+            <h3>Detalhes do video</h3>
+        </aside>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
