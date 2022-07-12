@@ -11,18 +11,35 @@
         }
 
         div {
-            height: 420px;
+            min-height: 350px;
             width: 490px;
             border: 10px double darkblue;
             margin: auto;
         }
+        
+        #detalhes {
+            color: white;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        iframe {
+            max-height: 100%;
+            max-width: 99%;
+            margin: auto;
+        }
+
     </style>
 </head>
 <body>
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/fPbbL723-bg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <h3>Detalhes do video</h3>
+        <aside id="detalhes">
+            <h3>Detalhes do video</h3>
+        </aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maxime commodi et ducimus! Quisquam asperiores omnis sequi iste corporis veniam suscipit qui, voluptates aperiam id eaque, tempore ab magni! Suscipit.</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
