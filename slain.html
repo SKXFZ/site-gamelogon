@@ -34,10 +34,23 @@
 <body>
     <div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/qIRYAPwdSY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <aside id="detalhes">
+        <aside id="detalhes" onclick="detalhesslain()">
             <h3>Detalhes do video</h3>
         </aside>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function detalhesslain() {
+        const clique = document.querySelector('#detalhes')
+        clique.innerHTML = ''
+        const texto = document.createElement('p')
+        texto.style.textDecoration = 'solid';
+        texto.style.cursor = 'Default';
+        texto.innerHTML = `<big><strong>Titulo:</strong></big> Game Domina`
+        texto.innerHTML += `<big>
+            <p><strong>Data:</strong>
+        </big> 16/07/2020</p>`
+        clique.appendChild(texto)
+        }
+    </script>
 </body>
 </html>
