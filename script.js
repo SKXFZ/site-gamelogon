@@ -1,4 +1,4 @@
-alert('testando')
+
 const butao = document.querySelector('#buton')
 
 function login() {
@@ -7,18 +7,25 @@ function login() {
     const chave = document.querySelector('#senha').value;
     
     if (usuario == 'admin' && chave == 'admin') {
+        document.addEventListener('keypress', function(e) {
+            if (e.key === "enter") {
+                butao.click();
+            }
+        })
         alert('sucesso')
+        location.href = "videos-select.html"
+        return false;
     } else {
         let errologin = document.createElement('p')
-        //errologin.setAttribute = ('id', 'loginincorreto')
         errologin.innerText = 'Usuario ou senha incorreto. Tente novamente!'
         errologin.style.marginBottom = '10px'
         errologin.style.fontSize = '17px'
         interface.appendChild(errologin)
     }
-    errologin.innerHTML = '';
+
 }
 butao.addEventListener('click', login)
+
 
 
 function validacaovideo() {
