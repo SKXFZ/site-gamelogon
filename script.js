@@ -1,20 +1,25 @@
 alert('testando')
-function login() {
-    const usuario = document.querySelector('usuario');
-    const chave = document.querySelector('senha');
-}
+const butao = document.querySelector('#buton')
 
-function detalhesdom(msg) {
-    const clique = document.querySelector('#detalhes')
-    clique.innerHTML = ''
-    const texto = document.createElement('p')
-    texto.style.textDecoration = 'none';
-    texto.style.cursor = 'Default';
-    texto.innerHTML = msg;
-    texto.innerHTML = `<h3>Titulo: </h3> <p> Game Domina</p>`
-    texto.innerHTML += `<h3>Data: </h3> <p> 16/07/2020</p>`
-    clique.appendChild(texto)
+function login() {
+    const interface = document.querySelector('#logon')
+    const usuario = document.querySelector('#usuario').value;
+    const chave = document.querySelector('#senha').value;
+    
+    if (usuario == 'admin' && chave == 'admin') {
+        alert('sucesso')
+    } else {
+        let errologin = document.createElement('p')
+        //errologin.setAttribute = ('id', 'loginincorreto')
+        errologin.innerText = 'Usuario ou senha incorreto. Tente novamente!'
+        errologin.style.marginBottom = '10px'
+        errologin.style.fontSize = '17px'
+        interface.appendChild(errologin)
+    }
+    errologin.innerHTML = '';
 }
+butao.addEventListener('click', login)
+
 
 function validacaovideo() {
     const selectdomina = document.querySelector('#domina');
@@ -41,5 +46,4 @@ function validacaovideo() {
         return msg;
     }
 }
-const domina = document.addEventListener('click', detalhesdom)
 const selecaovideo = document.addEventListener('click', validacaovideo)
